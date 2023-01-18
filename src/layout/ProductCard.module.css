@@ -1,0 +1,20 @@
+.myLink {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  color: black;
+  text-decoration: none;
+}
+
+.myLink:hover {
+  color: crimson;
+}
+
+.xs-text {
+  font-size: 0.7rem;
+}
+
+.cursorPointer:hover {
+  cursor: pointer !important;
+}

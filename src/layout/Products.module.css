@@ -1,0 +1,13 @@
+.activeLink {
+  color: crimson !important;
+  border-bottom: 5px crimson !important;
+  border-bottom: 2px solid crimson !important;
+}
+
+.fadeOnChange {
+  transition: opacity 0.15s linear !important;
+}
+
+.hoverRed:hover {
+  color: crimson !important;
+}

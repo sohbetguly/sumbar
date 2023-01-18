@@ -1,0 +1,14 @@
+.swiper-pagination-bullet-active {
+  background-color: rgb(184, 78, 78);
+  width: 10px;
+  height: 10px;
+  transition: width height 1s;
+}
+
+.zoom-container {
+  .swiper-slide-active {
+    // scale: 1;
+    transform: scale(1.03);
+    transition: all 3s;
+  }
+}

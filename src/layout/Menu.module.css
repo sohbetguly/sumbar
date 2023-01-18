@@ -1,0 +1,16 @@
+.opacity-low::after {
+  opacity: 0.1;
+}
+
+.opacity-high::after {
+  opacity: 1 !important;
+}
+
+.dropdown-in-right::after {
+  margin-left: auto !important;
+  margin-right: 3px !important;
+}
+
+.removeDrop::after {
+  display: none !important;
+}

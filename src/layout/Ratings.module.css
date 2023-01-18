@@ -1,0 +1,12 @@
+#ratingTitle {
+  padding: 1rem;
+}
+#ratingTitle a {
+  color: black;
+  text-decoration: none;
+  margin: 2rem;
+}
+#ratingTitle a:hover {
+  color: red;
+  text-decoration: none;
+}
