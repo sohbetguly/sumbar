@@ -33,7 +33,6 @@ function ProductCard({ image, price, caption }) {
             {price} <small>TMT</small>
           </div>
           <button
-            style={{ cursor: "pointer" }}
             className={
               classes["xs-text"] +
               " btn btn-danger rounded-pill text-uppercase text-xs fw-bold add-to-cart "
