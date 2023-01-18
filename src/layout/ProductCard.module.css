@@ -18,3 +18,8 @@
 .cursorPointer:hover {
   cursor: pointer !important;
 }
+
+.rightCorner{
+  position: absolute;
+  
+}
