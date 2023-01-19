@@ -7,3 +7,53 @@ a {
 .xs-text {
   font-size: 0.7rem;
 }
+
+/* .top-right-border {
+  position: absolute;
+  top: 0;
+  left: 10%;
+  z-index: 1;
+} */
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.rotate-45 {
+  transform: rotate(315deg);
+  /* top: 50%; */
+  bottom: 40%;
+  width: 50%;
+
+  /* overflow: hidden !important; */
+}
+
+.left-top {
+  position: absolute;
+  top: 0;
+  bottom: 75%;
+  right: 75%;
+}
+
+.stack-top {
+  z-index: 1;
+  position: absolute;
+  font-size: 14px;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -100%) rotate(45deg); /* 29.29% = 100%*(1 - cos(45deg)) */
+  color: #fff;
+  text-align: center;
+  width: 100px;
+  transform-origin: bottom left;
+}
+
+.stack-top.left {
+  left: 0;
+  transform: translate(-35%, -120%) rotate(-45deg);
+  transform-origin: bottom right;
+}
+
+.check-diff {
+  z-index: 2;
+}

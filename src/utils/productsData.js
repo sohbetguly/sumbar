@@ -31,6 +31,7 @@ export default {
       title: "Игровой контроллер LOGITECH G923 для ПК и PlayStation",
       img: reccommended1,
       price: "40.00",
+      isNew: true,
     },
     {
       title: "Игровой контроллер LOGITECH G923 для ПК и PlayStation",
@@ -167,6 +168,7 @@ export default {
         "Поясная сумка для бега RIVACASE 5411 (С надписью 'DANGER' / Серый цвет)",
       img: popular8,
       price: "800.00",
+      isNew: true,
     },
   ],
   laptops: [
@@ -191,6 +193,7 @@ export default {
         "НоутбИгровой ноутбук MSI KATANA GF76 (Процессор Intel® Core i5-11400H)",
       img: require("../images/product-icons/laptops/uUyFgl9vhz1b6DeVGrII.jpg"),
       price: "30 200.00",
+      isNew: true,
     },
   ],
   pcAccessories: [
@@ -275,6 +278,7 @@ export default {
       title: "Весы кухонные ARDESTO SCK-900BGR (Белый с зеленым цвет)",
       img: require("../images/product-icons/FURNITURE/NNIPpKvkhC0wtHnBgvST.jpg"),
       price: "254.00",
+      isNew: true,
     },
     {
       title: "Машинка для стрижки волос XIAOMI ENCHEN BOOST (Белый цвет)",

@@ -61,8 +61,14 @@ function Products() {
         className={active !== "#reccommendedTab" ? "d-none" : ""}
       >
         <Row className={`g-0`} xl="4" lg="3" md="2" sm="3" xs="2">
-          {products.recommended.map(({ img, title, price }) => (
-            <ProductCard key={img} image={img} caption={title} price={price} />
+          {products.recommended.map(({ img, title, price, isNew }) => (
+            <ProductCard
+              key={img}
+              image={img}
+              caption={title}
+              price={price}
+              isNew={isNew}
+            />
           ))}
         </Row>
       </Fade>
@@ -71,8 +77,14 @@ function Products() {
         className={active !== "#newsTab" ? "d-none" : ""}
       >
         <Row className={`g-0`} xl="4" lg="3" md="2" sm="3" xs="2">
-          {products.new.map(({ img, title, price }) => (
-            <ProductCard key={img} image={img} caption={title} price={price} />
+          {products.new.map(({ img, title, price, isNew }) => (
+            <ProductCard
+              key={img}
+              image={img}
+              caption={title}
+              price={price}
+              isNew={isNew}
+            />
           ))}
         </Row>
       </Fade>
@@ -81,8 +93,14 @@ function Products() {
         className={active !== "#popularTab" ? "d-none" : ""}
       >
         <Row className={`g-0`} xl="4" lg="3" md="2" sm="3" xs="2">
-          {products.popular.map(({ img, title, price }) => (
-            <ProductCard key={img} image={img} caption={title} price={price} />
+          {products.popular.map(({ img, title, price, isNew }) => (
+            <ProductCard
+              key={img}
+              image={img}
+              caption={title}
+              price={price}
+              isNew={isNew}
+            />
           ))}
         </Row>
       </Fade>
@@ -103,8 +121,14 @@ function Products() {
         </a>
       </div>
       <Row className={`g-0`} xl="4" lg="3" md="2" sm="3" xs="2">
-        {products.laptops.map(({ img, title, price }) => (
-          <ProductCard key={img} image={img} caption={title} price={price} />
+        {products.laptops.map(({ img, title, price, isNew }) => (
+          <ProductCard
+            key={img}
+            image={img}
+            caption={title}
+            price={price}
+            isNew={isNew}
+          />
         ))}
       </Row>
       <div

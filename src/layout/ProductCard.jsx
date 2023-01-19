@@ -3,16 +3,24 @@ import { Form } from "react-bootstrap";
 import { AiFillHeart, AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
 import classes from "./ProductCard.module.css";
 
-function ProductCard({ image, price, caption }) {
+function ProductCard({ image, price, caption, isNew }) {
+  console.log(isNew);
+  console.log(caption);
   return (
-    <div className="border p-2">
-      <div>
-        <div className="d-inline-block position-relative top-0 end-100">
-          <div className="d-inline-block page-link popover-arrow py-1 px-2 border rounded ">
+    <div className="border p-2 position-relative overflow-hidden">
+      {isNew && (
+        <div className="stack-top left text-bg-danger bg-gradient">Taze</div>
+      )}
+      <div className="position-relative ">
+        <div className="d-flex align-items-center justify-content-end flex-nowrap top-0 end-0 ">
+          <div className="p-sm-0 py-1 px-2 border rounded bg-white check-diff h7 ">
             <Form.Check type="checkbox" id={image}>
-              <Form.Check.Input type="checkbox" isInvalid className="" />
+              <Form.Check.Input
+                type="checkbox"
+                isInvalid
+                className="check-diff "
+              />
               <Form.Check.Label
-                style={{ cursor: "pointer" }}
                 className="cursor-pointer text-dark"
                 htmlFor={image}
               >
@@ -20,10 +28,9 @@ function ProductCard({ image, price, caption }) {
               </Form.Check.Label>
             </Form.Check>
           </div>
+          <AiOutlineZoomIn className="mx-1 fs-5 cursor-pointer " />
+          <AiOutlineHeart className="text-danger fs-5 cursor-pointer " />
         </div>
-        <AiOutlineZoomIn style={{ cursor: "pointer" }} className="mx-1 fs-5" />
-        <AiOutlineHeart className="text-danger fs-5" />
-
         <a href="#">
           <img src={image} className="img-fluid " />
         </a>
