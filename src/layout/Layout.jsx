@@ -1,18 +1,13 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import "../../node_modules/bootstrap/dist/css/bootstrap.css";
 import { Pagination, Autoplay } from "swiper";
 import { slideImages, mainImages } from "../utils/imageData";
 
-// Import Swiper styles
 import "swiper/css";
-// import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/autoplay";
-// import "swiper/css/scrollbar";
 import "./Layout.scss";
 import Menu from "./Menu";
 import Ratings from "./Ratings";
-import { Nav } from "react-bootstrap";
 import Products from "./Products";
 
 function Layout() {

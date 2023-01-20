@@ -4,8 +4,6 @@ import { AiFillHeart, AiOutlineHeart, AiOutlineZoomIn } from "react-icons/ai";
 import classes from "./ProductCard.module.css";
 
 function ProductCard({ image, price, caption, isNew }) {
-  console.log(isNew);
-  console.log(caption);
   return (
     <div className="border p-2 position-relative overflow-hidden">
       {isNew && (
@@ -13,7 +11,7 @@ function ProductCard({ image, price, caption, isNew }) {
       )}
       <div className="position-relative ">
         <div className="d-flex align-items-center justify-content-end flex-nowrap top-0 end-0 ">
-          <div className="p-sm-0 py-1 px-2 border rounded bg-white check-diff h7 ">
+          <div className="p-sm-0 p-lg-1 px-lg-2  py-1 px-2 border rounded bg-white check-diff h7 ">
             <Form.Check type="checkbox" id={image}>
               <Form.Check.Input
                 type="checkbox"
