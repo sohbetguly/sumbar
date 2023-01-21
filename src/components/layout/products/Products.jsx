@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import { div, Fade, Nav, Row } from "react-bootstrap";
+import { Fade, Nav, Row } from "react-bootstrap";
+import { AiFillCaretRight } from "react-icons/ai";
+import products from "../../../utils/productsData";
 import ProductCard from "./ProductCard";
 import styles from "./Products.module.css";
-import products from "../utils/productsData";
-import { AiFillCaretRight } from "react-icons/ai";
 
 function Products() {
   const [active, setActive] = useState("#reccommendedTab");

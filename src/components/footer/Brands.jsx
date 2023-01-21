@@ -1,17 +1,9 @@
-import React from "react";
-import { Pagination } from "react-bootstrap";
-import { Autoplay } from "swiper";
-import { Swiper, SwiperSlide } from "swiper/react";
-import brands from "../utils/brands";
 import { Splide, SplideSlide } from "@splidejs/react-splide";
-// Default theme
 import "@splidejs/react-splide/css";
-
-// or other themes
-import "@splidejs/react-splide/css/skyblue";
+import React from "react";
+import brands from "../../utils/brands";
 import "@splidejs/react-splide/css/sea-green";
-
-// or only core styles
+import "@splidejs/react-splide/css/skyblue";
 import "@splidejs/react-splide/css/core";
 
 function Brands() {
@@ -25,12 +17,18 @@ function Brands() {
         gap: "1rem",
         type: "loop",
         pagination: false,
-        autoplay: true,
         drag: "free",
-        perMove: 5,
+        autoplay: true,
+        resetProgress: false,
+        cover: false,
         arrows: false,
-        speed: 10,
         flickPower: 60,
+        perMove: 1,
+        interval: 2500,
+        snap: true,
+        autoScroll: {
+          speed: 1,
+        },
         breakpoints: {
           1200: { perPage: 6, gap: ".5rem" },
           800: { perPage: 4 },

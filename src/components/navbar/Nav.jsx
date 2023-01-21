@@ -7,8 +7,10 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import logo from "../images/sumbar-computer-light.svg";
-import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+import logo from "../../images/sumbar-computer-light.svg";
+// import "../../node_modules/bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/css/bootstrap.css";
+import { Link } from "react-router-dom";
 
 function Nav() {
   const navLinks = [
@@ -22,7 +24,7 @@ function Nav() {
   return (
     <React.Fragment>
       <div className="bg-dark text-white">
-        <div className="container-xl">
+        <div className="container-xxl">
           <div className="d-flex justify-content-between align-items-center p-2">
             <div className="text-left">
               <a
@@ -37,9 +39,13 @@ function Nav() {
               {navLinks.map(({ link, title }) => {
                 return (
                   <ul key={link} className="m-0">
-                    <a className="text-light text-decoration-none" href={link}>
+                    <Link
+                      onClick={() => window.scrollTo(0, 0)}
+                      className="text-light text-decoration-none"
+                      to={link}
+                    >
                       {title}
-                    </a>
+                    </Link>
                   </ul>
                 );
               })}
@@ -56,7 +62,9 @@ function Nav() {
           <div className="container-xl">
             <div className="row py-2 justify-content-between">
               <div className="col-lg-3">
-                <img className="me-4" src={logo} alt="" />
+                <Link to={"/"}>
+                  <img className="me-4" src={logo} alt="" />
+                </Link>
               </div>
               <div className="col-lg-5 align-self-center d-lg-block d-none">
                 <form action="">

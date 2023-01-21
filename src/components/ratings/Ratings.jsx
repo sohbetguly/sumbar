@@ -26,7 +26,7 @@ function Ratings() {
   ];
 
   return (
-    <div>
+    <div className="d-none d-md-block">
       <div
         id={classes.ratingTitle}
         className="text-uppercase h5 text-center py-3 mt-3"

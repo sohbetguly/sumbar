@@ -1,4 +1,5 @@
 import image1 from "../images/main images/slider1.jpg";
+import image10 from "../images/main images/slider10.jpg";
 import image2 from "../images/main images/slider2.jpg";
 import image3 from "../images/main images/slider3.jpg";
 import image4 from "../images/main images/slider4.jpg";
@@ -7,7 +8,6 @@ import image6 from "../images/main images/slider6.jpg";
 import image7 from "../images/main images/slider7.jpg";
 import image8 from "../images/main images/slider8.jpg";
 import image9 from "../images/main images/slider9.jpg";
-import image10 from "../images/main images/slider10.jpg";
 
 import MSlide1 from "../images/mini slides/MSlide1.gif";
 import MSlide2 from "../images/mini slides/MSlide2.gif";

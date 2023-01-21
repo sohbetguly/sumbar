@@ -1,8 +1,7 @@
 import "./App.css";
-import Brands from "./layout/Brands";
-import Footer from "./layout/Footer";
-import Layout from "./layout/Layout";
-import Nav from "./navbar/Nav";
+import Footer from "./components/footer/Footer";
+import Layout from "./components/layout/Layout";
+import Nav from "./components/navbar/Nav";
 
 function App() {
   return (

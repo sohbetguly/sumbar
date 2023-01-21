@@ -1,9 +1,9 @@
-import { Dropdown, ButtonGroup } from "react-bootstrap";
-import { MdMonitor } from "react-icons/md";
-import { BsFilterLeft } from "react-icons/bs";
-import styles from "./Menu.module.css";
 import { useState } from "react";
-import menuItems from "../utils/meniItems";
+import { ButtonGroup, Dropdown } from "react-bootstrap";
+import { BsFilterLeft } from "react-icons/bs";
+import { MdMonitor } from "react-icons/md";
+import menuItems from "../../utils/menuItems";
+import styles from "./Menu.module.css";
 
 function Menu() {
   const [isHidden, setIsHidden] = useState("false");

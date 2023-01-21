@@ -1,0 +1,6 @@
+.myLinkStyle {
+  color: rgb(189, 189, 188);
+}
+.myLinkStyle:hover {
+  color: rgb(255, 255, 255);
+}
